@@ -17,7 +17,7 @@ files=page_souped.findAll("a",{"class":"media mediafile mf_pdf test"})  #len(sli
 
 # Download the file from `url` and save it locally under `file_name`:
 #if a tag has only one child node, and that child node is a string, the child node is made available as tag.string, as well as tag.contents[0]
-prefix='https://vision.in.tum.de/'
+prefix='https://vision.in.tum.de/'                     
 i=0
 for entry in files:
     print(entry)
@@ -27,7 +27,6 @@ for entry in files:
     if i<=15:
         with open(entry.string+".pdf", 'wb') as out_file:
             out_file.write(response2.content)
-
     else :
         with open("Exercise"+entry.string+".pdf", 'wb') as out_file:
             out_file.write(response2.content)
