@@ -1,0 +1,26 @@
+
+Wang@DESKTOP-QBGL2HK MINGW64 ~/Desktop/my_work
+$ git --version
+$ touch abc.py
+$ git config --global user.name 'Willy'
+$ git config --global user.email 'cw.wang@tum.de'
+$ git status
+Show current branch
+$ git init
+Initialized empty Git repository in C:/Users/Wang/Desktop/my_work/.git/
+$ git add abc.py
+Add file to "list to be committed"
+$ touch .gitignore
+$ git rm --cached ignore_me.txt.txt
+$ git reset
+Clear list to be committed
+$git config --global core.editor "your editor -w"
+pass the parameter "-w" to force Git to wait your commit message
+$git branch mybranch
+$git checkout mybranch/master
+switch to new branch/master
+$git merge mybranch
+$git remote
+see remote repository
+$git remote add origin https://github.com/willy8216/python_ML.git
+$git push -u origin master
